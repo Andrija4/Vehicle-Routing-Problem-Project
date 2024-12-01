@@ -1,48 +1,42 @@
 # Vehicle Routing Problem Project
 
-Ovaj repozitorijum sadrži projekat vezan za rešavanje problema rutiranja vozila (*Vehicle Routing Problem - VRP*). Problem rutiranja vozila je optimizacioni problem koji ima široku primenu u logistici, transportu i distribuciji.
+Ovaj repozitorijum sadrži projekat za rešavanje problema rutiranja vozila (*Vehicle Routing Problem - VRP*), optimizacionog problema koji se koristi za planiranje optimalnih ruta vozila u logistici i transportu.
 
 ## Opis projekta
 
-Cilj ovog projekta je razviti rešenje za optimizaciju ruta vozila kako bi se minimizirali troškovi, pređena udaljenost ili vreme, uz poštovanje ograničenja kao što su kapacitet vozila, vremenski prozori ili specifični zahtevi klijenata.
-
-## Sadržaj
-
-- **Kod**  
-  Implementacija algoritama za rešavanje VRP-a, uključujući heuristike i optimizacione tehnike.
-- **Podaci**  
-  Ulazni skupovi podataka koji definišu mrežu klijenata, vozila i ograničenja.
-- **Rezultati**  
-  Primeri rezultata optimizovanih ruta i analiza njihovih performansi.
-
-## Tehnologije
-
-Projekat je razvijen koristeći:
-- Programski jezik **C**
-- Standardne biblioteke i algoritme za optimizaciju
+Problem rutiranja vozila uključuje pronalaženje najefikasnijih ruta za jedno ili više vozila kako bi se dostavile robe ili usluge različitim klijentima, uz minimizaciju troškova kao što su vreme, udaljenost ili gorivo, i poštovanje ograničenja kao što su kapacitet vozila ili vremenski prozori.
 
 ## Kako koristiti
 
 1. Klonirajte repozitorijum: git clone https://github.com/Andrija4/Vehicle-Routing-Problem-Project.git cd Vehicle-Routing-Problem-Project
-2. Pogledajte ulazne fajlove u direktorijumu `data` za primer ulaznih skupova podataka.
-3. Kompajlirajte i pokrenite projekat: gcc -o vrp_solver main.c ./vrp_solver data/input_file.txt
-Zamenite `data/input_file.txt` odgovarajućim fajlom sa podacima.
 
-## Organizacija
+2. Proverite da li imate instaliran Python i potrebne biblioteke. Ukoliko je potreban dodatni softver, instalirajte ga pomoću: pip install -r requirements.txt
+(Ako fajl `requirements.txt` ne postoji, pogledajte zavisnosti u kodu i ručno instalirajte potrebne biblioteke.)
 
-- `src/`  
-Glavni izvorni kod projekta.
-- `data/`  
-Skupovi podataka za testiranje.
-- `results/`  
-Generisani rezultati i analize.
+3. Pokrenite program:python main.py
+Zamenite `main.py` sa imenom glavnog fajla ukoliko je drugačije.
 
-## Plan razvoja
+## Organizacija fajlova
 
-- [x] Implementacija osnovnog heurističkog algoritma
-- [ ] Dodavanje naprednih algoritama (npr. genetski algoritam, simulirano kaljenje)
-- [ ] Vizualizacija ruta
-- [ ] Dokumentacija i korisnički interfejs
+- `main.py`  
+Glavni fajl za pokretanje programa.
+- Ostali fajlovi uključuju implementaciju različitih funkcionalnosti, ulazne podatke i testove.
+
+## Primer ulaznih podataka
+
+Ulazni podaci se obično definišu u tekstualnim fajlovima ili Python skriptama. Format ulaza može uključivati:
+- Koordinate klijenata
+- Broj i kapacitet vozila
+- Matricu udaljenosti između tačaka
+
+Primer ulaznog fajla:
+5 # Broj klijenata 3 # Broj vozila 10 20 # Koordinate klijenta 1 15 25 # Koordinate klijenta 2 ...
+
+## Plan unapređenja
+
+- [ ] Dodavanje podrške za različite heuristike i optimizacione algoritme
+- [ ] Vizualizacija ruta korišćenjem biblioteka kao što su Matplotlib ili Folium
+- [ ] Detaljna dokumentacija i korisnički interfejs
 
 ## Autor
 
@@ -51,5 +45,3 @@ Projekat je razvijen od strane [Andrija4](https://github.com/Andrija4). Slobodno
 ## Licence
 
 Ovaj projekat nema specifičnu licencu, pa se koristi **"as-is"**. Ukoliko imate pitanja ili predloge, slobodno ih podelite putem sekcije *issues*.
-
-
