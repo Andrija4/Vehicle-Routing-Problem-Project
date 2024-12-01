@@ -13,29 +13,22 @@ Problem rutiranja vozila uključuje pronalaženje najefikasnijih ruta za jedno i
 2. Proverite da li imate instaliran Python i potrebne biblioteke. Ukoliko je potreban dodatni softver, instalirajte ga pomoću: pip install -r requirements.txt
 (Ako fajl `requirements.txt` ne postoji, pogledajte zavisnosti u kodu i ručno instalirajte potrebne biblioteke.)
 
-3. Pokrenite program:python main.py
-Zamenite `main.py` sa imenom glavnog fajla ukoliko je drugačije.
+3. Pokrenite program
 
 ## Organizacija fajlova
 
-- `main.py`  
-Glavni fajl za pokretanje programa.
-- Ostali fajlovi uključuju implementaciju različitih funkcionalnosti, ulazne podatke i testove.
+- `algoritam01_shortesRoute.py`  
+Pokretanje programa sa alogirtmom "Shortest Route"
+- `algoritam01_greedyAdd.py`
+Pokretanje programa sa algoritmom "Greedy Add"
 
 ## Primer ulaznih podataka
 
-Ulazni podaci se obično definišu u tekstualnim fajlovima ili Python skriptama. Format ulaza može uključivati:
-- Koordinate klijenata
-- Broj i kapacitet vozila
-- Matricu udaljenosti između tačaka
-
-Primer ulaznog fajla:
-5 # Broj klijenata 3 # Broj vozila 10 20 # Koordinate klijenta 1 15 25 # Koordinate klijenta 2 ...
+5 # Broj klijenata 3 # Broj vozila 
 
 ## Plan unapređenja
 
 - [ ] Dodavanje podrške za različite heuristike i optimizacione algoritme
-- [ ] Vizualizacija ruta korišćenjem biblioteka kao što su Matplotlib ili Folium
 - [ ] Detaljna dokumentacija i korisnički interfejs
 
 ## Autor
